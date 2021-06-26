@@ -1,0 +1,57 @@
+.body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #0645ad;
+}
+
+a:visited {
+  color: #0645ad;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.container {
+  width: 45%;
+  margin: 50px auto;
+}
+
+.name {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.contact-block {
+  margin-top: 40px;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
