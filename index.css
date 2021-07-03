@@ -8,14 +8,22 @@
 }
 
 a {
-  text-decoration: none;
   /* color: #0645ad; */
+  text-decoration: none;
   color: #34febb;
+  transition: color 0.1s linear;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
 }
 
 a:visited {
   /* color: #0645ad; */
   color: #34febb;
+}
+
+a:hover {
+  /* color: #0645ad; */
+  color: #32ae85;
 }
 
 .background {
