@@ -42,7 +42,7 @@ a:visited {
   font-size: 35px;
 }
 
-.title {
+.heading {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
@@ -60,4 +60,19 @@ a:visited {
 .list-item {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .background {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 75%;
+    margin: 50px auto;
+  }
 }
