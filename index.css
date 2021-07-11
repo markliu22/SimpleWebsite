@@ -34,30 +34,31 @@ a:hover {
   min-height: 100vh;
   width: 100%;
   font-family: "Monaco";
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: 1px;
   line-height: 26px;
 }
 
+/* this width percentage determines how "squished the text should be" */
 .container {
-  width: 45%;
+  width: 50%;
   margin: 50px auto;
 }
 
 .name {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 35px;
+  font-size: 37px;
 }
 
 .heading {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 65px;
+  margin-bottom: 25px;
   font-size: 25px;
 }
 
 .contact-block {
-  margin-top: 40px;
+  margin-top: 65px;
 }
 
 .list {
