@@ -31,8 +31,8 @@ a:hover {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  font-family: "Monaco";
-  font-size: 17px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 26px;
 }
@@ -50,13 +50,13 @@ a:hover {
 }
 
 .heading {
-  margin-top: 65px;
-  margin-bottom: 25px;
+  margin-top: 45px; /* this has to be the same as margin-top of .contact-block */
+  margin-bottom: 20px;
   font-size: 25px;
 }
 
 .contact-block {
-  margin-top: 65px;
+  margin-top: 45px;
 }
 
 .list {
