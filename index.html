@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- For Google Fonts: -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <!-- For Google Fonts: -->
   <link rel="stylesheet" href="index.css" />
-  <link rel="icon" href="./assets/mark_logo_thumbnailPNG.png" />
+  <link rel="icon" href="./assets/ml.png" />
   <title class="title">Mark Liu</title>
 </head>
 
@@ -20,24 +21,26 @@
     <div class="container">
       <div class="left-column">
         <div class="about-block">
-          <div class="heading">About Me:</div>
+          <div class="heading">hi !</div>
         </div>
         <div class="about-paragraph">
           <p>
-            Hi! I'm Mark, a student at the
-            <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>
-            studying Computer Science.
+            I'm Mark.
+          </p>
+          <p>I completed my Bachelor's of Computer Science from the
+            <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>.
           </p>
           <p>
-            Feel free to contact me if you have any questions or want to chat!
+            Feel free to contact me if you have any questions or want to chat !
           </p>
         </div>
         <div class="contact-block">
-          <div class="heading">Contact:</div>
+          <div class="heading">contact:</div>
           <ul class="list">
             <li class="list-item">
               <ion-icon name="mail-open"></ion-icon>
-              <a href="mailto:markliu202@gmail.com" target="_blank">markliu202@gmail.com</a>
+              <a href="#" onclick="copyEmailToClipboard('markliu202@gmail.com')">markliu202@gmail.com</a>
+              <span id="copy-notification" style="display:none; margin-left: 10px; color: #32ae85;">Copied!</span>
             </li>
             <li class="list-item">
               <ion-icon name="logo-github"></ion-icon>
@@ -49,60 +52,61 @@
             </li>
             <li class="list-item">
               <ion-icon name="lock-closed"></ion-icon>
-              <a href="https://keyserver.ubuntu.com/pks/lookup?search=markliu202%40gmail.com&fingerprint=on&op=index">markliu202@gmail.com PGP Key</a>
+              <a href="https://keyserver.ubuntu.com/pks/lookup?search=markliu202%40gmail.com&fingerprint=on&op=index">markliu202@gmail.com
+                PGP Key</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="right-column">
         <div class="timeline">
-          <div class="heading">Experience:</div>
+          <div class="heading">experience:</div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/google/" target="_blank">Google</a></h3>
-              <p class="title">Summer 2024 Software Engineer Intern</p>
+              <p class="title">summer 2024 software engineer intern</p>
               <p class="team">GCP Confidential Space</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/google/" target="_blank">Google</a></h3>
-              <p class="title">Summer 2023 Software Engineer Intern</p>
+              <p class="title">summer 2023 software engineer intern</p>
               <p class="team">Pixel GPS</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/google/" target="_blank">Google</a></h3>
-              <p class="title">Fall 2022 Software Engineer Intern</p>
+              <p class="title">fall 2022 software engineer intern</p>
               <p class="team">Maps Immersive View</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/google/" target="_blank">Google</a></h3>
-              <p class="title">Winter 2022 Software Engineer Intern</p>
+              <p class="title">winter 2022 software engineer intern</p>
               <p class="team">Workspace</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/getclearco/" target="_blank">Clearco</a></h3>
-              <p class="title">Summer 2021 Software Engineer Intern</p>
+              <p class="title">summer 2021 software engineer intern</p>
               <p class="team">Customer Experience</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/ortexo/" target="_blank">Ortexo</a></h3>
-              <p class="title">Fall 2020 Software Engineer Intern</p>
+              <p class="title">fall 2020 software engineer intern</p>
               <p class="team">Core</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3><a href="https://www.linkedin.com/company/project-beck/about/" target="_blank">Project Beck</a></h3>
-              <p class="title">Summer 2020 Software Engineer Intern</p>
+              <p class="title">summer 2020 software engineer intern</p>
               <p class="team">Core</p>
             </div>
           </div>
@@ -112,6 +116,19 @@
   </div>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function copyEmailToClipboard(email) {
+      navigator.clipboard.writeText(email).then(() => {
+        const notification = document.getElementById('copy-notification');
+        notification.style.display = 'inline';
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 2000);
+      }).catch(err => {
+        console.error('Could not copy email to clipboard', err);
+      });
+    }
+  </script>
 </body>
 
 </html>
